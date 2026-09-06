@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DP BOSS VIP</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #1a162b, #09080e);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    .vip-badge {
+      background: linear-gradient(90deg, #ffb300, #f59e0b);
+      color: #000;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 16px rgba(245, 158, 11, 0.4);
+      display: inline-block;
+    }
+
+    .logo-box {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px;
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.6));
+    }
+
+    .logo-box svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+      background: linear-gradient(180deg, #ffffff 40%, #a1a1aa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #9ca3af;
+      max-width: 320px;
+      margin-bottom: 24px;
+    }
+
+    /* Vibrant Neon Green High-Converting Download Button */
+    .download-btn {
+      display: inline-block;
+      width: 100%;
+      max-width: 300px;
+      padding: 15px 20px;
+      background: linear-gradient(135deg, #00e676, #00b0ff);
+      color: #000000;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      border-radius: 14px;
+      box-shadow: 0 0 20px rgba(0, 230, 118, 0.45), 0 8px 16px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+      margin-bottom: 24px;
+      animation: pulse-glow 2s infinite ease-in-out;
+    }
+
+    .download-btn:active {
+      transform: scale(0.97);
+      box-shadow: 0 0 12px rgba(0, 230, 118, 0.6);
+    }
+
+    @keyframes pulse-glow {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 16px rgba(0, 230, 118, 0.4);
+      }
+      50% {
+        transform: scale(1.03);
+        box-shadow: 0 0 28px rgba(0, 230, 118, 0.75);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 16px rgba(0, 230, 118, 0.4);
+      }
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 24px;
+    }
+
+    .feature {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #e4e4e7;
+    }
+
+    .info-box {
+      width: 100%;
+      max-width: 300px;
+      background: rgba(0, 230, 118, 0.08);
+      border: 1px solid rgba(0, 230, 118, 0.25);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 12px;
+      margin-bottom: 28px;
+    }
+
+    .info-box strong {
+      color: #00e676;
+      font-size: 13px;
+    }
+
+    .info-box span {
+      color: #d1d5db;
+    }
+
+    .footer {
+      font-size: 11px;
+      color: #52525b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="vip-badge">✦ VIP EXPERIENCE ✦</div>
+
+  <!-- DP LOGO -->
+  <div class="logo-box">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="95" fill="#ffffff" stroke="#00e676" stroke-width="4"/>
+      <text x="35" y="115"
+        font-family="'Brush Script MT', 'Segoe Script', cursive, sans-serif"
+        font-size="54"
+        font-weight="bold"
+        fill="#ff1475"
+        font-style="italic">
+        Dp
+      </text>
+      <text x="96" y="112"
+        font-family="'Arial Black', Impact, sans-serif"
+        font-size="28"
+        font-weight="900"
+        fill="#111111"
+        letter-spacing="0.5">
+        BOSS
+      </text>
+    </svg>
+  </div>
+
+  <h1>DP BOSS</h1>
+
+  <p class="subtitle">
+    Welcome to DP BOSS<br>
+    Experience our latest updates and superfast results.
+  </p>
+
+  <!-- DOWNLOAD BUTTON -->
+  <a href="https://dpbosssuparfast.com"
+     class="download-btn"
+     target="_blank"
+     rel="noopener noreferrer">
+    📥 DOWNLOAD NOW
+  </a>
+
+  <div class="features">
+    <div class="feature">⚡ Fast</div>
+    <div class="feature">🔒 Secure</div>
+    <div class="feature">📱 Mobile Friendly</div>
+    <div class="feature">✦ VIP Access</div>
+  </div>
+
+  <div class="info-box">
+    <strong>🚀 Superfast Access</strong>
+    <span>Click download to get the latest updates directly.</span>
+  </div>
+
+  <div class="footer">
+    © 2026 DP BOSS. All Rights Reserved.
+  </div>
+
+</body>
+</html>
